@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+<title>TRIVIA LABB</title>
+<img src="trivia.jpg" alt="Logotipo">
+<link href ="style.css" rel ="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Gugi" rel="stylesheet">
+</head>
+
+<body>
+<h1 id="titulo">Bienvenida </h1>
+<p id="name"></p>
+
+
+
+<form id = "quiz" name = "quiz">
+
+
+<p class = "questions">¿De qué color es el cielo?</p>
+<input type = "radio" id = "mc" name = "question1" value = "Amarillo">Amarillo<br>
+<input type = "radio" id = "mc" name = "question1" value = "Azul">Azul<br>
+
+<p class = "questions">¿De qué color son las plantas?</p>
+<input type = "radio" id = "mc" name = "question2" value = "Verde">Verde<br>
+<input type = "radio" id = "mc" name = "question2" value = "Azul">Azul<br>
+
+<p class = "questions">¿Cual es la capital de Peru?</p>
+
+<input type = "radio" id = "mc" name = "question3" value = "Lima">Lima<br>
+<input type = "radio" id = "mc" name = "question3" value = "Cuzco">Cuzco<br>
+
+
+<input id = "button" type = "button" value = "Terminé!" onclick = "check()";>
+
+
+</form>
+
+<div id = "after_submit">
+<p id = "number_correct"></p>
+<p id = "message"></p>
+<img id = "picture">
+</div>
+
+<div id= ANSWER>
+  <h2 id = "titulo2"></h2>
+   <ul><li id = "answer1"></li>
+      <li id = "answer2"></li>
+      <li id = "answer3"></li>
+  </ul>
+</div>
+
+<script src = "main.js"></script>
+</body>
+</html>
